@@ -9,10 +9,10 @@ import { LeaderService} from '../services/leader.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private leaderService: LeaderService) { }
+  constructor(private leaderservice: LeaderService) { }
 
   getLeaders(): void{
-    this.leaders = this.leaderService.getLeaders();
+    this.leaders = this.leaderservice.getLeaders();
   }
   ngOnInit(){
     //automatically exectued when this comp is created
@@ -20,7 +20,7 @@ export class AboutComponent implements OnInit {
     //set into local variable
   }
 
-  onSelect(leader: Leader) {
-    this.selectedLeader = leader;
-  }
+  // onSelect(leader: Leader) {
+  //   this.selectedLeader = leader;
+  // }
 }

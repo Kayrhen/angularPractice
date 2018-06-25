@@ -1,8 +1,10 @@
-<mat-toolbar color="primary">
+ <mat-toolbar color="primary">
   <span><img src="/assets/images/logo.png" height=30 width=41></span>
   <a mat-button routerLinkActive="active" routerLink="/home"><span class="fa fa-home fa-lg"></span> Home</a>
   <a mat-button routerLinkActive = "active" routerLink = "/aboutus"><span class="fa fa-info fa-lg"></span> About</a> <!--routerLinkActive="active"-->
   <a mat-button routerLinkActive="active" routerLink="/menu"><span class="fa fa-list fa-lg"></span> Menu</a>
+   <span class = "flex-spacer"></span> <!--pushes elements to the edge properly -->
+  <a mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span>Login</a>
 <a mat-button routerLinkActive="active" routerLink="/contactus"><span class="fa fa-address-card fa-lg"></span> Contact</a>
 
 </mat-toolbar>

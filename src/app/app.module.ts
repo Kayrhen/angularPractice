@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import {MatGridListModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatAutocompleteModule, MatInputModule,MatFormFieldModule } from '@angular/material';
+import {MatGridListModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatAutocompleteModule, MatInputModule,MatFormFieldModule, MatCheckboxModule } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {HttpModule} from '@angular/http';
 import { MenuComponent } from './menu/menu.component';
@@ -18,6 +18,9 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LeaderService} from './services/leader.service';
+import { LoginComponent } from './login/login.component';
+import { MatDialogModule } from '@angular/material';
+//import { FormsModule } from '@angular/forms';
 //import 'hammerjs';
 
 @NgModule({
@@ -29,9 +32,13 @@ import {LeaderService} from './services/leader.service';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
+    MatCheckboxModule,
+  //  FormsModule,
+    MatDialogModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -52,6 +59,8 @@ import {LeaderService} from './services/leader.service';
     MatFormFieldModule
   ],
   providers: [DishService, PromotionService, LeaderService],
+  entryComponents:[
+    LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
