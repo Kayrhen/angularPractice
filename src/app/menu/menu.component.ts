@@ -28,7 +28,6 @@ export class MenuComponent implements OnInit {
     this.getDishes();
     //set into local variable
   }
-. . .
 
   onSelect(dish: Dish) {
     this.selectedDish = dish;

@@ -3,7 +3,9 @@ import {Dish} from '../shared/dish';
 import { DishService } from '../services/dish.service';
 
 import { Params, ActivatedRoute } from '@angular/router';
+//gives access to router parameters, allows you to pass info
 import { Location } from '@angular/common';
+//allows you to track location in the page, so you can go back
 
 @Component({
   selector: 'app-dishdetail',
@@ -26,7 +28,5 @@ export class DishdetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
-}
 
 }
