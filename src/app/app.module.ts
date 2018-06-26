@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import {MatGridListModule, MatListModule, MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatAutocompleteModule, MatInputModule,MatFormFieldModule, MatCheckboxModule } from '@angular/material';
+import {MatGridListModule, MatListModule, MatButtonModule, MatCardModule,
+  MatMenuModule, MatToolbarModule, MatIconModule, MatAutocompleteModule,
+  MatInputModule,MatFormFieldModule, MatCheckboxModule,
+  MatSlideToggleModule, MatSelectModule } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {HttpModule} from '@angular/http';
 import { MenuComponent } from './menu/menu.component';
@@ -20,6 +23,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {LeaderService} from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 import { MatDialogModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 //import { FormsModule } from '@angular/forms';
 //import 'hammerjs';
 
@@ -36,7 +40,10 @@ import { MatDialogModule } from '@angular/material';
     LoginComponent
   ],
   imports: [
+    ReactiveFormsModule,
     MatCheckboxModule,
+    MatSlideToggleModule,
+    MatSelectModule,
   //  FormsModule,
     MatDialogModule,
     BrowserModule,
