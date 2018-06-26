@@ -17,6 +17,9 @@
     <p>{{dish.description}}
     </p>
   </mat-card-content>
+  <div [hidden]="dish">
+   <mat-progress-spinner></mat-progress-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
 </mat-card>
 
 <mat-card *ngIf="promotion" fxFlex>

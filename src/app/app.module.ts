@@ -24,6 +24,7 @@ import {LeaderService} from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 import { MatDialogModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 //import { FormsModule } from '@angular/forms';
 //import 'hammerjs';
 
@@ -44,6 +45,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatSlideToggleModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
   //  FormsModule,
     MatDialogModule,
     BrowserModule,

@@ -12,11 +12,11 @@ export class AboutComponent implements OnInit {
   constructor(private leaderservice: LeaderService) { }
 
   getLeaders(): void{
-    this.leaders = this.leaderservice.getLeaders();
+
   }
   ngOnInit(){
     //automatically exectued when this comp is created
-    this.getLeaders();
+    this.leaderservice.getLeaders().then(leaders => this.leaders = leaders);
     //set into local variable
   }
 
