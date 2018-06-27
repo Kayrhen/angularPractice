@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
   }
   ngOnInit(){
     //automatically exectued when this comp is created
-    this.leaderservice.getLeaders().then(leaders => this.leaders = leaders);
+        this.leaderservice.getLeaders().subscribe(leaders => this.leaders = leaders);
     //set into local variable
   }
 
